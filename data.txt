@@ -1,0 +1,8 @@
+CREATE KEYSPACE dataflow WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+
+CREATE TABLE parameter(
+	id text PRIMARY KEY,
+	key text,
+  	param_name text,
+  	param_value text
+);
